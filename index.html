@@ -36,6 +36,23 @@
     </ul>
 
     <table>
+      <tr>
+        <td>
+          <div class="input-field col s6">
+            <input id="itemFilter" type="text" class="validate">
+            <label for="itemFilter">Item Name</label>
+          </div>
+        </td>
+        <td>
+          <div class="input-field col s6">
+            <input id="maxAmountFilter" type="text" class="validate">
+            <label for="maxAmountFilter">Max Amount</label>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table>
       <thead>
         <tr>
             <th>OrderDate</th>
@@ -46,41 +63,11 @@
             <th>Quantity</th>
             <th>UnitPrice</th>
             <th>TotalPrice</th>
-
         </tr>
       </thead>
 
-      <tbody>
-        <tr>
-          <td>Alvin</td>
-          <td>Eclair</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-        </tr>
-        <tr>
-          <td>Alan</td>
-          <td>Jellybean</td>
-          <td>$3.76</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-        </tr>
-        <tr>
-          <td>Jonathan</td>
-          <td>Lollipop</td>
-          <td>$7.00</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-          <td>$0.87</td>
-        </tr>
+      <tbody id="tableBody">
+
       </tbody>
     </table>
 

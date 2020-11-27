@@ -2444,7 +2444,23 @@ let json = {
 }
 
 function DrawTable(itemNameFilter, maxAmountFilter){
+    let tableBody = "";
     json.FoodSales.forEach(element => {
+        tableBody += `<tr>
+            <td>${element.OrderDate}</td>
+            <td>${element.Region}</td>
+            <td>${element.City}</td>
+            <td>${element.Category}</td>
+            <td>${element.Product}</td>
+            <td>${element.Quantity}</td>
+            <td>${element.UnitPrice}</td>
+            <td>${element.TotalPrice}</td>
+        </tr>`;
         
     });
+    document.querySelector("#tableBody").innerHTML = tableBody;
 }
+
+function applyFilter(){};
+
+DrawTable();
